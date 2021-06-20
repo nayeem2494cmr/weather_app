@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+     crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="/img/weather-app.png" type="image/x-icon">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="location1">
+        <a href="#"><h1 style="text-align: center;">Weather App</h1></a>
+    </div>
+    <div class="location-search">
+        <!-- <button title="Click twice" class="l-btn" type="submit" name="loc" onclick="geoLoc()">
+            <i class="fa fa-map-marked-alt fa-2x"></i>
+        </button> -->
+        
+        <form>
+            <div class="city">
+                <button class="s-btn" type="submit" name="search">
+                    <i class="fa fa-search fa-2x"></i>
+                </button>
+                <input class="c-search" type="text" placeholder="Enter a City Name To Search ">
+                
+            </div>
+            
+        </form>
+    </div>
+    <div class="location">
+        <h1 class="location-timezone"></h1>
+        <div class="weather-icon"><canvas id="icon1" width="100" height="100" onerror="this.style.display='none'"></canvas></div>
+        <div class="current-time-section">
+            <h3 class="c-title"></h3><span class="time-clock"></span><h3 class="current-time"></h3>
+        </div>
+    </div>
+    <div class="temperature-description"></div> 
+    <div class="weather-details">
+        <div class="sunrise">
+            <h4 class="s-title"></h4>
+            <span class="sun"></span>
+            
+            <h3 class="sunrise-time"></h3>
+        </div>
+        <div class="sunset">
+            <h4 class="ss-title"></h4>
+            <span class="moon"></span>
+            <h3 class="sunset-time"></h3>
+        </div>
+        <div class="humidity">
+            <h4 class="h-title"></h4>
+            <span class="tint"></span>
+            <h3 class="humid-perct"></h3>
+        </div>
+        <div class="Wind">
+            <h4 class="w-title"></h4>
+            <span class="speez"></span>
+            <h3 class="wind-speed"></h3>
+        </div>
+        <div class="degree-section">
+            <h4 class="tp-title"></h4>
+            <span class="temperature-degree"></span>
+            <span class="tempR"></span>
+            <button class="temp-btn" onclick="tempChange()"></button>
+        </div>
+    </div>
+    
+    <script src="/js/geoloc.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/tempChange.js"></script>
+    <script src="/js/skycons.js"></script>
+
+</body>
+</html>

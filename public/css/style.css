@@ -1,0 +1,229 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Roboto";
+	color: rgb(10, 10, 10);
+	background-color: #71c73f;
+}
+
+.location,
+.temperature {
+	height: 15vh;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: left;
+}
+.location {
+	height: 22vh;
+	width: 50%;
+}
+
+.location1,
+.location-search {
+	height: 15vh;
+	width: 70%;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.location-search {
+	height: 12vh;
+}
+
+.set-btn,
+a {
+	font-size: 20px;
+	padding: 10px 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.wicon {
+	pointer-events: none;
+	max-height: 50%;
+}
+
+/* Search based on City */
+.c-search {
+	border-style: none;
+	border-radius: 0.2rem;
+	min-width: 300px;
+	padding: 8px 16px;
+	font-size: 1.5rem;
+	margin: 5px;
+	background-color: wheat;
+	outline: none;
+}
+
+.c-search:hover{
+	background-color: springgreen;
+}
+
+.city {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.fa,
+.fa-search,
+.fa-2x,
+.fa-map-marked-alt {
+	pointer-events: none;
+	cursor: pointer;
+	color: white;
+}
+
+.fa-map-marked-alt-geoloc-red {
+	color: rgb(255, 32, 32);
+}
+
+.fa-sync-alt {
+	cursor: pointer;
+	background-color: transparent;
+	color: lightsteelblue;
+}
+
+.temp-btn {
+	background-color: transparent;
+	border-color: transparent;
+	cursor: pointer;
+	padding: 5px;
+	outline: none;
+}
+
+.s-btn,
+.l-btn {
+	cursor: pointer;
+	padding: 6px 6px;
+	border-radius: 5rem;
+	outline: none;
+	border-style: none;
+	background-color: darkolivegreen;
+}
+
+/* details sun rise and set */
+
+.weather-details {
+	display: flex;
+}
+
+.sunrise,
+.sunset,
+.humidity,
+.Wind {
+	padding: 5px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.degree-section {
+	padding: 5px 20px;
+}
+
+/* TEMP SECTION */
+.temperature-degree {
+	font-weight: bolder;
+	font-size: 22px;
+}
+
+.tempR {
+	font-weight: bolder;
+	font-size: 23px;
+}
+
+.temperature-description {
+	padding: 10px 5px;
+	font-size: 2rem;
+	text-transform: capitalize;
+}
+
+/* titles in the detail section */
+.s-title,
+.ss-title,
+.h-title,
+.tp-title,
+.w-title {
+	padding: 5px;
+}
+
+.sunrise-time,
+.sunset-time,
+.humid-perct,
+.wind-speed {
+	padding: 5px;
+}
+
+.temperature-degree {
+	padding: 10px 0px 0px 5px;
+}
+
+.tempR {
+	padding: 10px 0px 0px 0px;
+}
+
+/* title center */
+.c-title {
+	text-align: center;
+}
+
+
+/* Beta style */
+
+.beta {
+	border-style: inset;
+	padding: 3px 6px;
+
+	border-radius: 1.2rem;
+	border-color: #3fb950;
+	color: #3fb950;
+}
+
+/* footer */
+.footer-msg {
+	color: #000000;
+	margin-top: 3vh;
+	margin-left: 40%;
+}
+
+/* CREDITS */
+.fa-user-ninja::after,
+.fa-user-ninja::before,
+.fa-jedi-order::after,
+.fa-jedi-order::before,
+.fa-user-astronaut::before,
+.fa-user-astronaut::after,
+.fa-github {
+	color: #000000;
+	/* color: rgb(170, 161, 161); */
+}
+
+.footer-title,
+.credit-title {
+	padding: 2px 2px;
+	float: right;
+	color: #000000;
+	/* color: rgb(170, 161, 161); */
+}
+
+.linkers {
+	padding: 5px;
+}
+
+.s-btn:hover{
+	background-color: burlywood;
+	
+}

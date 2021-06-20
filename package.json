@@ -1,0 +1,26 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "geoloc.js",
+  "scripts": {
+    "start":"node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nayeem2494cmr/weather_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nayeem2494cmr/weather_app/issues"
+  },
+  "dependencies": {
+    "express": "^4.9.8"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "homepage": "https://github.com/nayeem2494cmr/weather_app#readme"
+}
